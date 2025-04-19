@@ -1,6 +1,6 @@
 <template>
     <div class="w-52 p-6 rounded-2xl border border-gray-300 bg-white flex flex-col">
-        <h3 class="text-xl font-medium mb-4 text-gray-700">Tâches de la semaine</h3>
+        <h3 class="text-xl font-medium mb-6 text-gray-700">Tâches de la semaine</h3>
         <div v-for="(task, index) in tasks" :key="index" class="flex items-center mb-2 last:mb-0 flex-grow">
             <div 
                 class="relative h-7 w-7 border-2 border-gray-300 rounded-lg flex items-center justify-center cursor-pointer"
