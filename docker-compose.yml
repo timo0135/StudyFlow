@@ -29,6 +29,8 @@ services:
     container_name: fastapi-backend
     ports:
       - "${BACKEND_PORT:-8081}:8000"
+    volumes:
+      - ./backend:/app
     environment:
       DATABASE_URL: ${DATABASE_URL:-postgres://default_user:default_password@db:5432/default_db}
     depends_on:
